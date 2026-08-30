@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Signup() {
   const [users, setUsers] = useState([]);
+  const navigate = useNavigate();
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -38,6 +39,7 @@ function Signup() {
 
     setUsername("");
     setPassword("");
+    navigate('/login')
   };
 
   return (

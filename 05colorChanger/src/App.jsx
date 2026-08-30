@@ -23,7 +23,7 @@ function App() {
     >
       <div className="bg-white/20 backdrop-blur-md p-6 rounded-2xl shadow-xl w-[340px]">
         
-        <h1 className="text-lg font-bold text-center mb-4 text-white">
+        <h1 className="text-lg font-bold text-center mb-4 text-white" style={{ color: isDark(color) ? "white" : "black" }}>
           Pick a Color 🎨
         </h1>
 
